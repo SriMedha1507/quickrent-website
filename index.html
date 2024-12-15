@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickRent - Gadget Renting Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>QuickRent</h1>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gadgets">Gadgets</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Rent the Latest Gadgets Easily</h2>
+        <button onclick="location.href='#gadgets'">Explore Rentals</button>
+        
+    </section>
+
+    <section id="features">
+        <h2 style="color: rgb(187, 201, 213);">Key Features</h2>
+        <div class="feature">
+            <i class="icon">🖥️</i>
+            <h3>Wide Variety of Gadgets</h3>
+            <p>Choose from laptops, cameras, gaming consoles, and more.</p>
+        </div>
+        <div class="feature">
+            <i class="icon">💰</i>
+            <h3>Affordable Pricing</h3>
+            <p>Rent gadgets at competitive prices.</p>
+        </div>
+        <div class="feature">
+            <i class="icon">🚚</i>
+            <h3>Quick Delivery</h3>
+            <p>Get your gadgets delivered to your doorstep in no time.</p>
+        </div>
+    </section>
+
+    <section id="gadgets">
+        <h2 style="color: rgb(187, 201, 213);">Available Gadgets for Rent</h2>
+        <div class="gadget-listing">
+            <div class="gadget">
+                <h3>Laptop XYZ</h3>
+                <p>Price: $20/day</p>
+                <button>List Your Gadget</button>
+            </div>
+            <div class="gadget">
+                <h3>Camera ABC</h3>
+                <p>Price: $15/day</p>
+                <button>List Your Gadget</button>
+            </div>
+            <div class="gadget">
+                <h3>Gaming Console 123</h3>
+                <p>Price: $25/day</p>
+                <button>List Your Gadget</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    </section>
+    <section id="login">
+        <div class="login-container">
+            <h2>Log In</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <button type="submit">Log In</button>
+            </form>
+            <p>Don't have an account? <a href="#signup">Sign up here</a>.</p>
+        </div>
+    </section>
+    <section id="signup"></section>
+        <div class="signup-container">
+        <h2>Create an Account</h2>
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#login">Log in here</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 QuickRent. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
